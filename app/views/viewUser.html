@@ -1,0 +1,33 @@
+<p>This is where you view timecards.</p>
+<div ng-app
+  <div class = "row">
+  <a href="#/submitTimecard"><button type="button" class="btn btn-primary btn-sm">Add Another TimeCard</button></a>
+  <button type="button" class="btn btn-primary btn-sm pull-right" ng-click = "delete()">Delete TimeCard</button>
+  </div>
+  <br>
+  <br>
+
+  <div class="row">
+  <div class="container">
+  <div class="jumbotron">
+    <table class="table table-hover table-bordered table-inverse" >
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="response in responses">
+        <th scope="row">{{response.id}}</th>
+        <td>{{response.firstName}}</td>
+        <td>{{response.lastName}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <br>
+
+  </div>
+  </div>
